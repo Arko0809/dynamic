@@ -1,0 +1,40 @@
+{
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "data": {
+    "type": "node--page",
+    "id": "tv-deals-001",
+    "attributes": {
+      "title": "TV Deals & Special Offers",
+      "path": "/tv/doEvenMore/deals",
+      "status": true,
+      "created": "2024-01-15T10:00:00Z",
+      "changed": "2024-01-20T15:30:00Z",
+      "field_meta_title": "TV Deals & Special Offers | Save Big on Premium Entertainment",
+      "field_meta_description": "Discover exclusive TV deals, bundle offers, and special promotions. Save money while getting premium entertainment.",
+      "field_layout_type": "tv",
+      "field_components": [
+        {
+          "id": "deals-hero-001",
+          "type": "component--hero",
+          "attributes": {
+            "component_type": "hero_section",
+            "field_hero_title": "Exclusive TV Deals & Offers",
+            "field_hero_subtitle": "Save big on premium TV packages with our limited-time deals and bundle offers",
+            "field_hero_image": "/images/tv-deals-hero.jpg",
+            "settings": {
+              "background_overlay": true,
+              "text_alignment": "center",
+              "cta_buttons": [
+                {
+                  "text": "View All Deals",
+                  "url": "/tv/deals/all",
+                  "style": "primary"
+                }
+            }
+  },
+  "links": {
+    "self": "/api/pages/tv/doEvenMore/deals"
+  }
+}

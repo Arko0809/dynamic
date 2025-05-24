@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dynamic Next.js App with Drupal-like Data
+
+This project is a dynamic Next.js application that mimics a Drupal-like data structure. It is designed to serve content dynamically based on URL slugs, allowing for flexible page rendering and API responses.
+
+## Project Structure
+
+The project is organized as follows:
+
+```
+dynamic-nextjs-drupal-app
+├── app
+│   ├── layout.tsx                    # Root layout for the application
+│   ├── page.tsx                       # Home page (redirects to /home)
+│   ├── api
+│   │   └── pages
+│   │       └── [...slug]
+│   │           └── route.ts           # Dynamic API endpoint
+│   ├── [...slug]
+│   │   └── page.tsx                   # Dynamic page handler
+│   ├── components
+│   │   ├── layouts
+│   │   │   ├── HomeLayout.tsx
+│   │   │   ├── TVLayout.tsx
+│   │   │   ├── InternetLayout.tsx
+│   │   │   └── DefaultLayout.tsx
+│   │   ├── ui
+│   │   │   ├── Header.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   ├── Navigation.tsx
+│   │   │   └── Breadcrumb.tsx
+│   │   └── content
+│   │       ├── HeroSection.tsx
+│   │       ├── FeatureGrid.tsx
+│   │       ├── PricingTable.tsx
+│   │       └── ContentBlock.tsx
+│   ├── data
+│   │   ├── pages
+│   │   │   ├── home.json
+│   │   │   ├── tv.json
+│   │   │   ├── tv-maxTv-stream.json
+│   │   │   ├── tv-maxTv-equipment.json
+│   │   │   ├── tv-doEvenMore-apps.json
+│   │   │   ├── tv-doEvenMore-deals.json
+│   │   │   ├── internet-package.json
+│   │   │   └── internet-links-plans.json
+│   │   ├── layouts
+│   │   │   └── layouts.json
+│   │   └── components
+│   │       └── navigation.json
+│   ├── lib
+│   │   ├── types.ts                   # TypeScript types
+│   │   └── utils.ts                   # Utility functions
+│   └── styles
+│       └── globals.css                # Global CSS styles
+├── package.json                       # npm configuration file
+├── tsconfig.json                     # TypeScript configuration file
+└── README.md                         # Project documentation
+```
+
+## Features
+
+- **Dynamic Routing**: The application supports dynamic routing based on slugs, allowing for flexible content delivery.
+- **API Integration**: A dynamic API endpoint is implemented to handle requests and serve data based on the URL.
+- **Component-Based Architecture**: The application is built using reusable components, promoting maintainability and scalability.
+- **Data-Driven Pages**: Content is served from JSON files, making it easy to manage and update without changing the codebase.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the project, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project directory:
+   ```
+   cd dynamic-nextjs-drupal-app
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Install the dependencies:
+   ```
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run the development server:
+   ```
+   npm run dev
+   ```
 
-## Learn More
+5. Open your browser and visit `http://localhost:3000` to see the application in action.
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License. See the LICENSE file for more details.

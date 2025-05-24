@@ -1,0 +1,109 @@
+{
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "data": {
+    "type": "node--page",
+    "id": "tv-apps-001",
+    "attributes": {
+      "title": "TV Apps & Do Even More",
+      "path": "/tv/doEvenMore/apps",
+      "status": true,
+      "created": "2024-01-15T10:00:00Z",
+      "changed": "2024-01-20T15:30:00Z",
+      "field_meta_title": "TV Apps | Stream More, Do More with Smart TV Features",
+      "field_meta_description": "Discover hundreds of apps and smart TV features to enhance your entertainment experience.",
+      "field_layout_type": "tv",
+      "field_components": [
+        {
+          "id": "apps-hero-001",
+          "type": "component--hero",
+          "attributes": {
+            "component_type": "hero_section",
+            "field_hero_title": "Smart TV Apps & Features",
+            "field_hero_subtitle": "Transform your TV into a smart entertainment hub with hundreds of apps and features",
+            "field_hero_image": "/images/smart-tv-apps.jpg",
+            "settings": {
+              "background_overlay": true,
+              "text_alignment": "center"
+            }
+          }
+        },
+        {
+          "id": "app-categories-001",
+          "type": "component--feature_grid",
+          "attributes": {
+            "component_type": "feature_grid",
+            "title": "App Categories",
+            "field_features": [
+              {
+                "title": "Streaming Services",
+                "description": "Netflix, Hulu, Disney+, Amazon Prime, and more",
+                "icon": "play",
+                "image": "/images/streaming-apps.jpg"
+              },
+              {
+                "title": "Gaming Apps",
+                "description": "Casual games, arcade classics, and interactive entertainment",
+                "icon": "gamepad",
+                "image": "/images/gaming-apps.jpg"
+              },
+              {
+                "title": "News & Information",
+                "description": "Stay updated with news apps and information channels",
+                "icon": "newspaper",
+                "image": "/images/news-apps.jpg"
+              },
+              {
+                "title": "Lifestyle & Health",
+                "description": "Fitness, cooking, travel, and lifestyle applications",
+                "icon": "heart",
+                "image": "/images/lifestyle-apps.jpg"
+              },
+              {
+                "title": "Music & Audio",
+                "description": "Spotify, Pandora, podcast apps, and music streaming",
+                "icon": "music",
+                "image": "/images/music-apps.jpg"
+              },
+              {
+                "title": "Kids & Family",
+                "description": "Educational and entertaining apps for children",
+                "icon": "users",
+                "image": "/images/kids-apps.jpg"
+              }
+            ],
+            "settings": {
+              "columns": 3,
+              "show_images": true
+            }
+          }
+        },
+        {
+          "id": "smart-features-001",
+          "type": "component--content_blocks",
+          "attributes": {
+            "component_type": "content_blocks",
+            "field_content_blocks": [
+              {
+                "title": "Voice Control Integration",
+                "content": "Control your TV and apps with voice commands. Search for content, change channels, adjust volume, and launch apps using natural voice recognition technology.",
+                "image": "/images/voice-control.jpg",
+                "layout": "left"
+              },
+              {
+                "title": "Personalized Home Screen",
+                "content": "Customize your TV experience with a personalized home screen that learns your preferences and suggests relevant content and apps based on your viewing habits.",
+                "image": "/images/personalized-home.jpg",
+                "layout": "right"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "links": {
+    "self": "/api/pages/tv/doEvenMore/apps"
+  }
+}

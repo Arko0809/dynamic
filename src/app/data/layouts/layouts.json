@@ -1,0 +1,253 @@
+{
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "data": [
+    {
+      "type": "layout--home",
+      "id": "home-layout",
+      "attributes": {
+        "layout_name": "HomeLayout",
+        "layout_type": "home",
+        "title": "Home Layout Configuration",
+        "status": true,
+        "created": "2024-01-01T10:00:00Z",
+        "changed": "2024-01-20T15:30:00Z",
+        "field_layout_config": {
+          "container_width": "full",
+          "sidebar": false,
+          "header_style": "transparent",
+          "footer_style": "full",
+          "background_type": "gradient",
+          "animation": "fade-in"
+        },
+        "field_layout_sections": [
+          "header",
+          "hero",
+          "main_content",
+          "footer"
+        ],
+        "field_styling": {
+          "color_scheme": "primary",
+          "typography": "modern",
+          "spacing": "comfortable"
+        }
+      }
+    },
+    {
+      "type": "layout--tv",
+      "id": "tv-layout",
+      "attributes": {
+        "layout_name": "TVLayout",
+        "layout_type": "tv",
+        "title": "TV Layout Configuration",
+        "status": true,
+        "created": "2024-01-01T10:00:00Z",
+        "changed": "2024-01-20T15:30:00Z",
+        "field_layout_config": {
+          "container_width": "contained",
+          "sidebar": true,
+          "sidebar_position": "left",
+          "header_style": "solid",
+          "footer_style": "minimal",
+          "background_type": "solid",
+          "animation": "slide-up"
+        },
+        "field_layout_sections": [
+          "header",
+          "breadcrumb",
+          "sidebar",
+          "main_content",
+          "related_content",
+          "footer"
+        ],
+        "field_styling": {
+          "color_scheme": "tv_brand",
+          "typography": "entertainment",
+          "spacing": "compact"
+        },
+        "field_sidebar_config": {
+          "show_navigation": true,
+          "show_featured_content": true,
+          "show_promotions": true,
+          "width": "300px"
+        }
+      }
+    },
+    {
+      "type": "layout--internet",
+      "id": "internet-layout",
+      "attributes": {
+        "layout_name": "InternetLayout",
+        "layout_type": "internet",
+        "title": "Internet Layout Configuration",
+        "status": true,
+        "created": "2024-01-01T10:00:00Z",
+        "changed": "2024-01-20T15:30:00Z",
+        "field_layout_config": {
+          "container_width": "wide",
+          "sidebar": false,
+          "header_style": "solid",
+          "footer_style": "full",
+          "background_type": "pattern",
+          "animation": "scale-in"
+        },
+        "field_layout_sections": [
+          "header",
+          "breadcrumb",
+          "hero",
+          "main_content",
+          "comparison_table",
+          "features",
+          "cta_section",
+          "footer"
+        ],
+        "field_styling": {
+          "color_scheme": "internet_brand",
+          "typography": "technical",
+          "spacing": "spacious"
+        },
+        "field_comparison_config": {
+          "show_speed_comparison": true,
+          "show_pricing_table": true,
+          "highlight_recommended": true
+        }
+      }
+    },
+    {
+      "type": "layout--default",
+      "id": "default-layout",
+      "attributes": {
+        "layout_name": "DefaultLayout",
+        "layout_type": "default",
+        "title": "Default Layout Configuration",
+        "status": true,
+        "created": "2024-01-01T10:00:00Z",
+        "changed": "2024-01-20T15:30:00Z",
+        "field_layout_config": {
+          "container_width": "contained",
+          "sidebar": false,
+          "header_style": "solid",
+          "footer_style": "standard",
+          "background_type": "white",
+          "animation": "none"
+        },
+        "field_layout_sections": [
+          "header",
+          "breadcrumb",
+          "main_content",
+          "footer"
+        ],
+        "field_styling": {
+          "color_scheme": "neutral",
+          "typography": "standard",
+          "spacing": "standard"
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "type": "layout_mapping--page_types",
+      "id": "layout-mappings",
+      "attributes": {
+        "mappings": {
+          "home": "home-layout",
+          "tv": "tv-layout",
+          "tv/*": "tv-layout",
+          "internet": "internet-layout",
+          "internet/*": "internet-layout",
+          "default": "default-layout"
+        },
+        "fallback_layout": "default-layout"
+      }
+    },
+    {
+      "type": "responsive_config--layouts",
+      "id": "responsive-settings",
+      "attributes": {
+        "breakpoints": {
+          "mobile": "768px",
+          "tablet": "1024px",
+          "desktop": "1200px",
+          "wide": "1440px"
+        },
+        "mobile_adjustments": {
+          "sidebar": false,
+          "container_width": "full",
+          "spacing": "compact"
+        },
+        "tablet_adjustments": {
+          "sidebar": true,
+          "sidebar_position": "bottom",
+          "container_width": "contained"
+        }
+      }
+    },
+    {
+      "type": "theme_config--layouts",
+      "id": "theme-settings",
+      "attributes": {
+        "color_schemes": {
+          "primary": {
+            "primary_color": "#0066cc",
+            "secondary_color": "#004499",
+            "accent_color": "#ff6600",
+            "text_color": "#333333",
+            "background_color": "#ffffff"
+          },
+          "tv_brand": {
+            "primary_color": "#8b0000",
+            "secondary_color": "#b30000",
+            "accent_color": "#ffd700",
+            "text_color": "#ffffff",
+            "background_color": "#1a1a1a"
+          },
+          "internet_brand": {
+            "primary_color": "#006633",
+            "secondary_color": "#009944",
+            "accent_color": "#00cc55",
+            "text_color": "#333333",
+            "background_color": "#f8f9fa"
+          },
+          "neutral": {
+            "primary_color": "#666666",
+            "secondary_color": "#888888",
+            "accent_color": "#0066cc",
+            "text_color": "#333333",
+            "background_color": "#ffffff"
+          }
+        },
+        "typography_sets": {
+          "modern": {
+            "heading_font": "Inter, sans-serif",
+            "body_font": "Inter, sans-serif",
+            "heading_weight": "700",
+            "body_weight": "400"
+          },
+          "entertainment": {
+            "heading_font": "Montserrat, sans-serif",
+            "body_font": "Open Sans, sans-serif",
+            "heading_weight": "800",
+            "body_weight": "400"
+          },
+          "technical": {
+            "heading_font": "Roboto, sans-serif",
+            "body_font": "Roboto, sans-serif",
+            "heading_weight": "500",
+            "body_weight": "300"
+          },
+          "standard": {
+            "heading_font": "system-ui, sans-serif",
+            "body_font": "system-ui, sans-serif",
+            "heading_weight": "600",
+            "body_weight": "400"
+          }
+        }
+      }
+    }
+  ],
+  "links": {
+    "self": "/api/layouts"
+  }
+}

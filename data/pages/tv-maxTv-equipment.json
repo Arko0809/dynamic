@@ -1,0 +1,97 @@
+{
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "data": {
+    "type": "node--page",
+    "id": "tv-max-equipment-001",
+    "attributes": {
+      "title": "Max TV Equipment",
+      "path": "/tv/maxTv/equipment",
+      "status": true,
+      "created": "2024-01-15T10:00:00Z",
+      "changed": "2024-01-20T15:30:00Z",
+      "field_meta_title": "Max TV Equipment | Premium Set-Top Boxes & Devices",
+      "field_meta_description": "Explore our premium Max TV equipment including 4K set-top boxes, streaming devices, and accessories.",
+      "field_layout_type": "tv",
+      "field_components": [
+        {
+          "id": "equipment-hero-001",
+          "type": "component--hero",
+          "attributes": {
+            "component_type": "hero_section",
+            "field_hero_title": "Premium Max TV Equipment",
+            "field_hero_subtitle": "State-of-the-art devices for the ultimate entertainment experience",
+            "field_hero_image": "/images/tv-equipment-hero.jpg",
+            "settings": {
+              "background_overlay": true,
+              "text_alignment": "left"
+            }
+          }
+        },
+        {
+          "id": "equipment-grid-001",
+          "type": "component--feature_grid",
+          "attributes": {
+            "component_type": "feature_grid",
+            "title": "Available Equipment",
+            "field_features": [
+              {
+                "title": "Max TV 4K Box",
+                "description": "Ultra HD 4K set-top box with voice remote and advanced features",
+                "icon": "box",
+                "image": "/images/4k-set-top-box.jpg"
+              },
+              {
+                "title": "Streaming Stick Pro",
+                "description": "Compact streaming device for any HDMI-enabled TV",
+                "icon": "usb",
+                "image": "/images/streaming-stick.jpg"
+              },
+              {
+                "title": "Voice Remote Pro",
+                "description": "Advanced voice-controlled remote with backlit keys",
+                "icon": "mic",
+                "image": "/images/voice-remote.jpg"
+              },
+              {
+                "title": "Wireless Mini Box",
+                "description": "Wireless receiver for additional rooms without cable runs",
+                "icon": "wifi",
+                "image": "/images/wireless-mini-box.jpg"
+              }
+            ],
+            "settings": {
+              "columns": 2,
+              "show_images": true
+            }
+          }
+        },
+        {
+          "id": "equipment-specs-001",
+          "type": "component--content_blocks",
+          "attributes": {
+            "component_type": "content_blocks",
+            "field_content_blocks": [
+              {
+                "title": "Technical Specifications",
+                "content": "Our Max TV equipment features the latest technology including 4K HDR support, Dolby Atmos audio, voice control, and seamless wireless connectivity. Each device is designed for easy installation and optimal performance.",
+                "image": "/images/tech-specs.jpg",
+                "layout": "full"
+              },
+              {
+                "title": "Installation & Support",
+                "content": "Professional installation available for all equipment. Our certified technicians ensure optimal setup and provide comprehensive training on device features. 24/7 technical support included with all equipment.",
+                "image": "/images/installation-support.jpg",
+                "layout": "right"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "links": {
+    "self": "/api/pages/tv/maxTv/equipment"
+  }
+}

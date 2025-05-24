@@ -1,27 +1,39 @@
 {
-  "name": "dynamic",
-  "version": "0.1.0",
-  "private": true,
+  "name": "dynamic-nextjs-drupal-app",
+  "version": "1.0.0",
+  "description": "A dynamic Next.js application with a structure similar to a Drupal site, utilizing JSON data for content.",
+  "main": "app/page.tsx",
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.1.8"
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "lucide-react": "^0.511.0",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "postcss": "^8",
+    "@types/node": "22.15.21",
+    "@types/react": "19.1.5",
+    "autoprefixer": "^10.4.17",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
-    "eslint": "^9",
-    "eslint-config-next": "15.1.8",
-    "@eslint/eslintrc": "^3"
-  }
+    "typescript": "latest"
+  },
+  "keywords": [
+    "nextjs",
+    "drupal",
+    "dynamic",
+    "application"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
 }

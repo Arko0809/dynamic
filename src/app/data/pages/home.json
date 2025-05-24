@@ -1,0 +1,113 @@
+{
+  "jsonapi": {
+    "version": "1.0",
+    "meta": {
+      "links": {
+        "self": {
+          "href": "http://jsonapi.org/format/1.0/"
+        }
+      }
+    }
+  },
+  "data": {
+    "type": "node--page",
+    "id": "home-page-001",
+    "attributes": {
+      "title": "Welcome Home",
+      "path": "/home",
+      "status": true,
+      "created": "2024-01-15T10:00:00Z",
+      "changed": "2024-01-20T15:30:00Z",
+      "field_meta_title": "Home | Your Ultimate Entertainment & Internet Provider",
+      "field_meta_description": "Discover premium TV packages and high-speed internet solutions. Stream, connect, and experience entertainment like never before.",
+      "field_layout_type": "home",
+      "field_components": [
+        {
+          "id": "hero-001",
+          "type": "component--hero",
+          "attributes": {
+            "component_type": "hero_section",
+            "field_hero_title": "Entertainment & Internet Excellence",
+            "field_hero_subtitle": "Premium TV packages and blazing-fast internet to power your digital lifestyle",
+            "field_hero_image": "/images/hero-home.jpg",
+            "settings": {
+              "background_overlay": true,
+              "text_alignment": "center",
+              "cta_buttons": [
+                {
+                  "text": "Explore TV Packages",
+                  "url": "/tv",
+                  "style": "primary"
+                },
+                {
+                  "text": "Internet Plans",
+                  "url": "/internet/package",
+                  "style": "secondary"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "features-001",
+          "type": "component--feature_grid",
+          "attributes": {
+            "component_type": "feature_grid",
+            "title": "Why Choose Us",
+            "field_features": [
+              {
+                "title": "Premium TV Experience",
+                "description": "Access thousands of channels, premium content, and on-demand streaming",
+                "icon": "tv",
+                "image": "/images/tv-feature.jpg"
+              },
+              {
+                "title": "Lightning-Fast Internet",
+                "description": "Ultra-high-speed internet for streaming, gaming, and working from home",
+                "icon": "wifi",
+                "image": "/images/internet-feature.jpg"
+              },
+              {
+                "title": "24/7 Support",
+                "description": "Round-the-clock customer support to keep you connected",
+                "icon": "support",
+                "image": "/images/support-feature.jpg"
+              },
+              {
+                "title": "Flexible Packages",
+                "description": "Customizable plans that fit your lifestyle and budget",
+                "icon": "package",
+                "image": "/images/package-feature.jpg"
+              }
+            ],
+            "settings": {
+              "columns": 2,
+              "show_images": true
+            }
+          }
+        },
+        {
+          "id": "content-001",
+          "type": "component--content_blocks",
+          "attributes": {
+            "component_type": "content_blocks",
+            "field_content_blocks": [
+              {
+                "title": "Transform Your Entertainment Experience",
+                "content": "Step into a world of unlimited entertainment with our comprehensive TV and internet solutions. From live sports and premium movies to ultra-fast browsing and streaming, we deliver everything you need to stay connected and entertained.",
+                "image": "/images/entertainment-transform.jpg",
+                "layout": "left"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "links": {
+    "self": "/api/pages/home"
+  },
+  "meta": {
+    "count": 1
+  }
+}                            

@@ -1,0 +1,191 @@
+{
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "data": {
+    "type": "navigation--main",
+    "id": "main-navigation",
+    "attributes": {
+      "name": "Main Navigation",
+      "status": true,
+      "created": "2024-01-01T10:00:00Z",
+      "changed": "2024-01-20T15:30:00Z",
+      "field_navigation_items": [
+        {
+          "id": "nav-home",
+          "title": "Home",
+          "url": "/home",
+          "weight": 0,
+          "expanded": false,
+          "enabled": true,
+          "icon": "home",
+          "description": "Go to homepage"
+        },
+        {
+          "id": "nav-tv",
+          "title": "TV",
+          "url": "/tv",
+          "weight": 1,
+          "expanded": true,
+          "enabled": true,
+          "icon": "tv",
+          "description": "Television services and packages",
+          "children": [
+            {
+              "id": "nav-tv-maxtv",
+              "title": "MaxTV",
+              "url": "/tv/maxTv",
+              "weight": 0,
+              "expanded": true,
+              "enabled": true,
+              "description": "Premium TV experience",
+              "children": [
+                {
+                  "id": "nav-tv-maxtv-stream",
+                  "title": "Stream",
+                  "url": "/tv/maxTv/stream",
+                  "weight": 0,
+                  "expanded": false,
+                  "enabled": true,
+                  "description": "Streaming services and apps"
+                },
+                {
+                  "id": "nav-tv-maxtv-equipment",
+                  "title": "Equipment",
+                  "url": "/tv/maxTv/equipment",
+                  "weight": 1,
+                  "expanded": false,
+                  "enabled": true,
+                  "description": "TV equipment and hardware"
+                }
+              ]
+            },
+            {
+              "id": "nav-tv-doevenmore",
+              "title": "Do Even More",
+              "url": "/tv/doEvenMore",
+              "weight": 1,
+              "expanded": true,
+              "enabled": true,
+              "description": "Additional TV features and services",
+              "children": [
+                {
+                  "id": "nav-tv-doevenmore-apps",
+                  "title": "Apps",
+                  "url": "/tv/doEvenMore/apps",
+                  "weight": 0,
+                  "expanded": false,
+                  "enabled": true,
+                  "description": "TV apps and entertainment"
+                },
+                {
+                  "id": "nav-tv-doevenmore-deals",
+                  "title": "Deals",
+                  "url": "/tv/doEvenMore/deals",
+                  "weight": 1,
+                  "expanded": false,
+                  "enabled": true,
+                  "description": "Special offers and promotions"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nav-internet",
+          "title": "Internet",
+          "url": "/internet",
+          "weight": 2,
+          "expanded": true,
+          "enabled": true,
+          "icon": "wifi",
+          "description": "High-speed internet services",
+          "children": [
+            {
+              "id": "nav-internet-package",
+              "title": "Packages",
+              "url": "/internet/package",
+              "weight": 0,
+              "expanded": false,
+              "enabled": true,
+              "description": "Internet speed packages and plans"
+            },
+            {
+              "id": "nav-internet-links",
+              "title": "Links",
+              "url": "/internet/links",
+              "weight": 1,
+              "expanded": true,
+              "enabled": true,
+              "description": "Internet connection options",
+              "children": [
+                {
+                  "id": "nav-internet-links-plans",
+                  "title": "Plans",
+                  "url": "/internet/links/plans",
+                  "weight": 0,
+                  "expanded": false,
+                  "enabled": true,
+                  "description": "Detailed internet plans and pricing"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "field_mobile_navigation": {
+        "enabled": true,
+        "hamburger_style": "lines",
+        "overlay_background": true,
+        "slide_direction": "left"
+      },
+      "field_utility_navigation": [
+        {
+          "id": "util-support",
+          "title": "Support",
+          "url": "/support",
+          "weight": 0,
+          "enabled": true,
+          "icon": "help-circle"
+        },
+        {
+          "id": "util-account",
+          "title": "My Account",
+          "url": "/account",
+          "weight": 1,
+          "enabled": true,
+          "icon": "user"
+        },
+        {
+          "id": "util-contact",
+          "title": "Contact",
+          "url": "/contact",
+          "weight": 2,
+          "enabled": true,
+          "icon": "phone"
+        }
+      ],
+      "field_cta_buttons": [
+        {
+          "id": "cta-signup",
+          "title": "Get Started",
+          "url": "/signup",
+          "style": "primary",
+          "weight": 0,
+          "enabled": true
+        },
+        {
+          "id": "cta-call",
+          "title": "Call Now",
+          "url": "tel:1-800-555-0123",
+          "style": "secondary",
+          "weight": 1,
+          "enabled": true
+        }
+      ]
+    }
+  },
+  "links": {
+    "self": "/api/navigation/main"
+  }
+}

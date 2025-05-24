@@ -1,0 +1,127 @@
+{
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "data": {
+    "type": "node--page",
+    "id": "tv-page-001",
+    "attributes": {
+      "title": "TV Packages & Entertainment",
+      "path": "/tv",
+      "status": true,
+      "created": "2024-01-15T10:00:00Z",
+      "changed": "2024-01-20T15:30:00Z",
+      "field_meta_title": "Premium TV Packages | Stream, Watch, Enjoy",
+      "field_meta_description": "Discover our comprehensive TV packages with thousands of channels, premium content, and streaming options.",
+      "field_layout_type": "tv",
+      "field_components": [
+        {
+          "id": "tv-hero-001",
+          "type": "component--hero",
+          "attributes": {
+            "component_type": "hero_section",
+            "field_hero_title": "Premium TV Entertainment",
+            "field_hero_subtitle": "Thousands of channels, premium content, and unlimited streaming possibilities",
+            "field_hero_image": "/images/tv-hero.jpg",
+            "settings": {
+              "background_overlay": true,
+              "text_alignment": "left"
+            }
+          }
+        },
+        {
+          "id": "tv-features-001",
+          "type": "component--feature_grid",
+          "attributes": {
+            "component_type": "feature_grid",
+            "title": "TV Features",
+            "field_features": [
+              {
+                "title": "Max TV Streaming",
+                "description": "Access premium streaming content with Max TV integration",
+                "icon": "play-circle",
+                "image": "/images/max-tv.jpg"
+              },
+              {
+                "title": "Premium Equipment",
+                "description": "State-of-the-art set-top boxes and streaming devices",
+                "icon": "monitor",
+                "image": "/images/equipment.jpg"
+              },
+              {
+                "title": "Mobile Apps",
+                "description": "Watch anywhere with our mobile and tablet applications",
+                "icon": "smartphone",
+                "image": "/images/mobile-apps.jpg"
+              },
+              {
+                "title": "Special Deals",
+                "description": "Exclusive offers and bundle deals for maximum savings",
+                "icon": "gift",
+                "image": "/images/deals.jpg"
+              }
+            ],
+            "settings": {
+              "columns": 2,
+              "show_images": true
+            }
+          }
+        },
+        {
+          "id": "tv-pricing-001",
+          "type": "component--pricing_table",
+          "attributes": {
+            "component_type": "pricing_table",
+            "title": "TV Package Plans",
+            "field_pricing_plans": [
+              {
+                "name": "Basic TV",
+                "price": "$49.99/month",
+                "features": [
+                  "150+ channels",
+                  "Local networks",
+                  "Basic cable channels",
+                  "On-demand content"
+                ],
+                "highlighted": false,
+                "cta_text": "Choose Basic",
+                "cta_url": "/tv/basic"
+              },
+              {
+                "name": "Premium TV",
+                "price": "$79.99/month",
+                "features": [
+                  "300+ channels",
+                  "Premium networks",
+                  "Sports packages",
+                  "Movie channels",
+                  "4K content"
+                ],
+                "highlighted": true,
+                "cta_text": "Choose Premium",
+                "cta_url": "/tv/premium"
+              },
+              {
+                "name": "Ultimate TV",
+                "price": "$99.99/month",
+                "features": [
+                  "500+ channels",
+                  "All premium content",
+                  "International channels",
+                  "Multiple streams",
+                  "Cloud DVR"
+                ],
+                "highlighted": false,
+                "cta_text": "Choose Ultimate",
+                "cta_url": "/tv/ultimate"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "links": {
+    "self": "/api/pages/tv"
+  }
+}

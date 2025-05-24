@@ -1,0 +1,104 @@
+{
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "data": {
+    "type": "node--page",
+    "id": "tv-max-stream-001",
+    "attributes": {
+      "title": "Max TV Streaming",
+      "path": "/tv/maxTv/stream",
+      "status": true,
+      "created": "2024-01-15T10:00:00Z",
+      "changed": "2024-01-20T15:30:00Z",
+      "field_meta_title": "Max TV Streaming | Premium Content Anywhere",
+      "field_meta_description": "Stream premium content with Max TV. Watch your favorite shows, movies, and live TV anywhere, anytime.",
+      "field_layout_type": "tv",
+      "field_components": [
+        {
+          "id": "max-stream-hero-001",
+          "type": "component--hero",
+          "attributes": {
+            "component_type": "hero_section",
+            "field_hero_title": "Max TV Streaming Experience",
+            "field_hero_subtitle": "Stream premium content anywhere, anytime with our advanced streaming platform",
+            "field_hero_image": "/images/max-tv-streaming.jpg",
+            "settings": {
+              "background_overlay": true,
+              "text_alignment": "center",
+              "cta_buttons": [
+                {
+                  "text": "Start Streaming",
+                  "url": "/tv/maxTv/stream/signup",
+                  "style": "primary"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "streaming-features-001",
+          "type": "component--feature_grid",
+          "attributes": {
+            "component_type": "feature_grid",
+            "title": "Streaming Features",
+            "field_features": [
+              {
+                "title": "4K Ultra HD",
+                "description": "Crystal clear 4K streaming for the ultimate viewing experience",
+                "icon": "monitor",
+                "image": "/images/4k-streaming.jpg"
+              },
+              {
+                "title": "Multi-Device Access",
+                "description": "Stream on TV, phone, tablet, and computer simultaneously",
+                "icon": "devices",
+                "image": "/images/multi-device.jpg"
+              },
+              {
+                "title": "Offline Downloads",
+                "description": "Download content to watch offline when you're on the go",
+                "icon": "download",
+                "image": "/images/offline-download.jpg"
+              },
+              {
+                "title": "Live TV Integration",
+                "description": "Seamlessly switch between streaming and live TV content",
+                "icon": "zap",
+                "image": "/images/live_tv_integration.jpg"
+              }
+            ],
+            "settings": {
+              "columns": 2,
+              "show_images": true
+            }
+          }
+        },
+        {
+          "id": "content-library-001",
+          "type": "component--content_blocks",
+          "attributes": {
+            "component_type": "content_blocks",
+            "field_content_blocks": [
+              {
+                "title": "Massive Content Library",
+                "content": "Access thousands of hours of premium content including exclusive series, blockbuster movies, documentaries, and live sports. Our Max TV streaming platform brings you the latest releases and timeless classics, all in stunning quality.",
+                "image": "/images/content-library.jpg",
+                "layout": "right"
+              },
+              {
+                "title": "Personalized Recommendations",
+                "content": "Our AI-powered recommendation engine learns your preferences to suggest content you'll love. Discover new shows and movies tailored specifically to your taste, making every viewing session an adventure.",
+                "image": "/images/personalized-recommendations.jpg",
+                "layout": "left"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "links": {
+    "self": "/api/pages/tv/maxTv/stream"
+  }
+}

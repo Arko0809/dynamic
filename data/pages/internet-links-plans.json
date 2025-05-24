@@ -1,0 +1,148 @@
+{
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "data": {
+    "type": "node--page",
+    "id": "internet-links-plans-001",
+    "attributes": {
+      "title": "Internet Links & Connection Plans",
+      "path": "/internet/links/plans",
+      "status": true,
+      "created": "2024-01-15T10:00:00Z",
+      "changed": "2024-01-20T15:30:00Z",
+      "field_meta_title": "Internet Connection Plans | Fiber & Cable Links",
+      "field_meta_description": "Explore our internet connection options including fiber-optic links, cable connections, and specialized business plans.",
+      "field_layout_type": "internet",
+      "field_components": [
+        {
+          "id": "links-hero-001",
+          "type": "component--hero",
+          "attributes": {
+            "component_type": "hero_section",
+            "field_hero_title": "Advanced Internet Connections",
+            "field_hero_subtitle": "Choose from fiber-optic, cable, and specialized connection plans designed for your specific needs",
+            "field_hero_image": "/images/internet-connections.jpg",
+            "settings": {
+              "background_overlay": true,
+              "text_alignment": "left"
+            }
+          }
+        },
+        {
+          "id": "connection-types-001",
+          "type": "component--feature_grid",
+          "attributes": {
+            "component_type": "feature_grid",
+            "title": "Connection Types",
+            "field_features": [
+              {
+                "title": "Fiber-Optic Links",
+                "description": "Ultra-fast fiber connections with symmetrical upload and download speeds",
+                "icon": "zap",
+                "image": "/images/fiber-optic.jpg"
+              },
+              {
+                "title": "Cable Connections",
+                "description": "Reliable cable internet with consistent speeds for everyday use",
+                "icon": "cable",
+                "image": "/images/cable-connection.jpg"
+              },
+              {
+                "title": "Business Links",
+                "description": "Dedicated business connections with SLA guarantees and priority support",
+                "icon": "building",
+                "image": "/images/business-links.jpg"
+              },
+              {
+                "title": "Redundant Connections",
+                "description": "Dual-path connections for maximum uptime and reliability",
+                "icon": "repeat",
+                "image": "/images/redundant-connections.jpg"
+              }
+            ],
+            "settings": {
+              "columns": 2,
+              "show_images": true
+            }
+          }
+        },
+        {
+          "id": "specialized-plans-001",
+          "type": "component--pricing_table",
+          "attributes": {
+            "component_type": "pricing_table",
+            "title": "Specialized Connection Plans",
+            "field_pricing_plans": [
+              {
+                "name": "Home Fiber Pro",
+                "price": "$89.99/month",
+                "features": [
+                  "Dedicated fiber connection",
+                  "Up to 1 Gig symmetrical",
+                  "Static IP available",
+                  "Professional installation"
+                ],
+                "highlighted": false,
+                "cta_text": "Get Fiber Pro",
+                "cta_url": "/internet/fiber-pro"
+              },
+              {
+                "name": "Business Essential",
+                "price": "$149.99/month",
+                "features": [
+                  "Dedicated business line",
+                  "99.9% SLA guarantee",
+                  "Priority technical support",
+                  "Multiple static IPs",
+                  "24/7 monitoring"
+                ],
+                "highlighted": true,
+                "cta_text": "Choose Business",
+                "cta_url": "/internet/business"
+              },
+              {
+                "name": "Enterprise Links",
+                "price": "Custom Pricing",
+                "features": [
+                  "Redundant connections",
+                  "Custom bandwidth",
+                  "Dedicated support team",
+                  "Advanced security features",
+                  "Custom SLA terms"
+                ],
+                "highlighted": false,
+                "cta_text": "Contact Sales",
+                "cta_url": "/contact/enterprise"
+              }
+            ]
+          }
+        },
+        {
+          "id": "technical-specs-001",
+          "type": "component--content_blocks",
+          "attributes": {
+            "component_type": "content_blocks",
+            "field_content_blocks": [
+              {
+                "title": "Technical Specifications",
+                "content": "Our internet connections utilize the latest networking technology including DOCSIS 3.1 for cable connections and GPON for fiber-optic links. All connections feature advanced QoS management, traffic shaping, and comprehensive network monitoring.",
+                "image": "/images/technical-specs.jpg",
+                "layout": "right"
+              },
+              {
+                "title": "Network Infrastructure",
+                "content": "Our robust network infrastructure spans multiple data centers with redundant backbone connections. We maintain 99.9% uptime through proactive monitoring, automatic failover systems, and 24/7 network operations center support.",
+                "image": "/images/network-infrastructure.jpg",
+                "layout": "left"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "links": {
+    "self": "/api/pages/internet/links/plans"
+  }
+}

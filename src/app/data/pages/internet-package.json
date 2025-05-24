@@ -1,0 +1,142 @@
+{
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "data": {
+    "type": "node--page",
+    "id": "internet-package-001",
+    "attributes": {
+      "title": "Internet Packages",
+      "path": "/internet/package",
+      "status": true,
+      "created": "2024-01-15T10:00:00Z",
+      "changed": "2024-01-20T15:30:00Z",
+      "field_meta_title": "High-Speed Internet Packages | Ultra-Fast Broadband Plans",
+      "field_meta_description": "Choose from our range of high-speed internet packages. From basic browsing to ultra-fast gigabit speeds for streaming and gaming.",
+      "field_layout_type": "internet",
+      "field_components": [
+        {
+          "id": "internet-hero-001",
+          "type": "component--hero",
+          "attributes": {
+            "component_type": "hero_section",
+            "field_hero_title": "Lightning-Fast Internet",
+            "field_hero_subtitle": "Ultra-high-speed internet packages for streaming, gaming, and everything in between",
+            "field_hero_image": "/images/internet-hero.jpg",
+            "settings": {
+              "background_overlay": true,
+              "text_alignment": "center"
+            }
+          }
+        },
+        {
+          "id": "internet-plans-001",
+          "type": "component--pricing_table",
+          "attributes": {
+            "component_type": "pricing_table",
+            "title": "Internet Speed Plans",
+            "field_pricing_plans": [
+              {
+                "name": "Essential Internet",
+                "price": "$39.99/month",
+                "features": [
+                  "Up to 100 Mbps",
+                  "Perfect for browsing & email",
+                  "Connect up to 5 devices",
+                  "24/7 support included"
+                ],
+                "highlighted": false,
+                "cta_text": "Choose Essential",
+                "cta_url": "/internet/essential"
+              },
+              {
+                "name": "Performance Internet",
+                "price": "$59.99/month",
+                "features": [
+                  "Up to 300 Mbps",
+                  "Great for streaming & gaming",
+                  "Connect up to 10 devices",
+                  "Free security suite",
+                  "No data caps"
+                ],
+                "highlighted": true,
+                "cta_text": "Choose Performance",
+                "cta_url": "/internet/performance"
+              },
+              {
+                "name": "Gigabit Pro",
+                "price": "$79.99/month",
+                "features": [
+                  "Up to 1 Gig (1000 Mbps)",
+                  "Ultimate speed for power users",
+                  "Unlimited devices",
+                  "Priority customer support",
+                  "Advanced WiFi equipment"
+                ],
+                "highlighted": false,
+                "cta_text": "Choose Gigabit",
+                "cta_url": "/internet/gigabit"
+              }
+            ]
+          }
+        },
+        {
+          "id": "internet-features-001",
+          "type": "component--feature_grid",
+          "attributes": {
+            "component_type": "feature_grid",
+            "title": "Internet Features",
+            "field_features": [
+              {
+                "title": "Reliable Connection",
+                "description": "99.9% uptime guarantee with redundant network infrastructure",
+                "icon": "shield-check",
+                "image": "/images/reliable-connection.jpg"
+              },
+              {
+                "title": "Advanced WiFi",
+                "description": "Latest WiFi 6 technology for maximum speed and coverage",
+                "icon": "wifi",
+                "image": "/images/advanced-wifi.jpg"
+              },
+              {
+                "title": "Security Included",
+                "description": "Comprehensive internet security suite at no extra cost",
+                "icon": "shield",
+                "image": "/images/internet-security.jpg"
+              },
+              {
+                "title": "Easy Setup",
+                "description": "Self-installation kit or professional installation available",
+                "icon": "settings",
+                "image": "/images/easy-setup.jpg"
+              }
+            ],
+            "settings": {
+              "columns": 2,
+              "show_images": true
+            }
+          }
+        },
+        {
+          "id": "internet-info-001",
+          "type": "component--content_blocks",
+          "attributes": {
+            "component_type": "content_blocks",
+            "field_content_blocks": [
+              {
+                "title": "Why Choose Our Internet?",
+                "content": "Experience the difference with our fiber-optic network delivering consistent, high-speed internet to your home. Whether you're working from home, streaming 4K content, or gaming online, our internet packages provide the speed and reliability you need.",
+                "image": "/images/fiber-network.jpg",
+                "layout": "left"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "links": {
+    "self": "/api/pages/internet/package"
+  }
+}
